@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bewest/share2nightscout-bridge.git"
+    "url": "git://github.com/mayaalinder/share2nightscout-bridge.git"
   },
   "engines": {
     "node": "~0.10.0"
@@ -25,6 +25,6 @@
     "cgm"
   ],
   "bugs": {
-    "url": "https://github.com/bewest/share2nightscout-bridge/issues"
+    "url": "https://github.com/mayaalinder/share2nightscout-bridge/issues"
   }
 }
