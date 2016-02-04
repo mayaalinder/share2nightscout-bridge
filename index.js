@@ -29,10 +29,10 @@ var crypto = require('crypto');
 
 // Defaults
 var host = "share1";
-    if (DEXCOM_G5_SERVER != 'US') {
-        host = "shareous1";
-    } else {
+    if (DEXCOM_G5_SERVER != 'OUTSIDE') {
         host = "share1";
+    } else {
+        host = "shareous1";
     }
 
 var Defaults = {
