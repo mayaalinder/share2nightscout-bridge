@@ -1,6 +1,6 @@
 {
   "name": "Share to Nightscout Bridge",
-  "repository": "https://github.com/bewest/share2nightscout-bridge",
+  "repository": "https://github.com/mayaalinder/share2nightscout-bridge",
   "env": {
     "API_SECRET": {
       "description": "This must match the API_SECRET password from your Nightscout website.",
