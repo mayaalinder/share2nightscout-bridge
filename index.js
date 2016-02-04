@@ -29,10 +29,10 @@ var crypto = require('crypto');
 
 // Defaults
 var host = "share1";
-    if (options.region != 'outside') {
-        host = "share1";
-    } else {
+    if (DEXCOM_G5_SERVER != 'US') {
         host = "shareous1";
+    } else {
+        host = "share1";
     }
 
 var Defaults = {
@@ -313,6 +313,7 @@ if (!module.parent) {
   };
   var ns_config = {
     API_SECRET: readENV('API_SECRET')
+    DEXCOM_G5_SERVER: readENV('DEXCOM_G5_SERVER')
   , endpoint: readENV('NS', 'https://' + readENV('WEBSITE_HOSTNAME'))
   };
   var interval = readENV('SHARE_INTERVAL', 60000 * 2.5);
