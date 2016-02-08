@@ -28,13 +28,13 @@ var crypto = require('crypto');
 
 
 // Defaults
-var host = {
+var host = "share1"
     if (readENV('BRIDGE_SERVER') != 'OUTSIDE') {
         host = "share1";
     } else {
         host = "shareous1";
     }
-}
+
 var Defaults = {
   "applicationId":"d89443d2-327c-4a6f-89e5-496bbb0317db"
 , "agent": "Dexcom Share/3.0.2.11 CFNetwork/711.2.23 Darwin/14.0.0"
