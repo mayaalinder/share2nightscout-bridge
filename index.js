@@ -29,7 +29,7 @@ var crypto = require('crypto');
 
 // Defaults
 var host = {
-    if (BRIDGE_SERVER != 'OUTSIDE') {
+    if ((readENV('BRIDGE_SERVER')) != 'OUTSIDE') {
         host = "share1";
     } else {
         host = "shareous1";
