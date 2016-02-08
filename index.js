@@ -28,7 +28,7 @@ var crypto = require('crypto');
 
 
 // Defaults
-var server = "shareous1"
+var server = "share1"
     if (readENV('BRIDGE_SERVER') != 'OUTSIDE') {
         server = "share1";
     } else {
