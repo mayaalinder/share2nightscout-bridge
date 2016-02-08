@@ -38,10 +38,10 @@ var server = "share1"
 var Defaults = {
   "applicationId":"d89443d2-327c-4a6f-89e5-496bbb0317db"
 , "agent": "Dexcom Share/3.0.2.11 CFNetwork/711.2.23 Darwin/14.0.0"
-, login: 'https://+ server +dexcom.com/ShareWebServices/Services/General/LoginPublisherAccountByName'
+, login: 'https://' + server + '.dexcom.com/ShareWebServices/Services/General/LoginPublisherAccountByName'
 , accept: 'application/json'
 , 'content-type': 'application/json'
-, LatestGlucose: "https://+ server +.dexcom.com/ShareWebServices/Services/Publisher/ReadPublisherLatestGlucoseValues"
+, LatestGlucose: 'https://' + server + '.dexcom.com/ShareWebServices/Services/Publisher/ReadPublisherLatestGlucoseValues'
 // ?sessionID=e59c836f-5aeb-4b95-afa2-39cf2769fede&minutes=1440&maxCount=1"
 , nightscout_upload: '/api/v1/entries.json'
 , nightscout_battery: '/api/v1/devicestatus.json'
@@ -313,7 +313,6 @@ if (!module.parent) {
   };
   var ns_config = {
     API_SECRET: readENV('API_SECRET')
-    BRIDGE_SERVER: readENV('BIDGE_SERVER')
   , endpoint: readENV('NS', 'https://' + readENV('WEBSITE_HOSTNAME'))
   };
   var interval = readENV('SHARE_INTERVAL', 60000 * 2.5);
