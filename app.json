@@ -17,7 +17,7 @@
       "value": "",
       "required": true
     },
-    "DEXCOM_SERVER": {
+    "BRIDGE_SERVER": {
       "description": "Dexcom Share server site.",
       "value": "",
       "required": false
